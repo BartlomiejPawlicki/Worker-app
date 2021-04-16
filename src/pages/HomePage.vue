@@ -2,7 +2,7 @@
   <div class="md-layout md-gutter">
     <div class="md-layout-item">
       <md-field>
-        <label for="movies">Technology</label>
+        <label for="filters">Technology</label>
         <md-select
           @md-selected="onChange"
           v-model="selectedFilters"

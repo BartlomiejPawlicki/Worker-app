@@ -3,11 +3,14 @@ import {workers} from '../../api/workers.js'
 import customFields from "./fields";
 
 
-const prepareSpecializationsForDisplay = (data) =>
-  data.map((x) => ({
+const prepareSpecializationsForDisplay = (data) => {
+  const results = data.map((x) => ({
     ...x,
     specializations: x.specializations.map((x) => x.name).join(", "),
   }));
+  
+  return results
+}
 
 
 export default {

@@ -2,7 +2,7 @@ export default [
   {
     key: "uuid",
     sortable: true,
-    label: "Identyfikator",
+    label: "ID",
   },
   {
     key: "first_name",

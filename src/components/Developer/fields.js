@@ -1,17 +1,17 @@
 export default [
+  {
+      key: "id",
+      sortable: true,
+      label: "Project ID",
+    },
     {
-        key: "id",
-        sortable: true,
-        label: "Identyfikator Projektu",
-      },
-      {
-        key: "date",
-        sortable:true,
-        label:"Data Projektu"
-      },
-      {
-        key:"name",
-        sortable:true,
-        label:"Nazwa Projektu"
-      }
-    ]
+      key: "date",
+      sortable:true,
+      label:"Project Date"
+    },
+    {
+      key:"name",
+      sortable:true,
+      label:"Project Name"
+    }
+  ]
