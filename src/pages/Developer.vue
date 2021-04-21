@@ -8,7 +8,11 @@
         <span class="developer-email"> {{ worker.email }} </span>
       </p>
     </div>
-    <b-table :items="projects" :fields="fields"></b-table>
+    <b-table :items="projects" :fields="fields">
+                <template #cell(opinions)="data">
+                <router-link :to="`/workers/${$route.params.id}/project/${data.item.id}`">see project</router-link>
+          </template>
+    </b-table>
       <button @click="$router.back()" class="developer-button">
         <md-icon> arrow_back</md-icon>
 </button>

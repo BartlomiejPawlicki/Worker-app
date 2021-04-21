@@ -7,13 +7,12 @@ export default {
   data: () => ({
     worker: {},
     projects: [],
-    fields: [...customFields]
+    fields: [...customFields, { key: "opinions" }]
   }),
   mounted() {
     const uuid = this.$route.params.id
     this.worker = getUserById(uuid)
     this.projects = getProjectsByWorkerId(uuid)
-    console.log(getUserById(uuid))
   },
   computed: {
   },

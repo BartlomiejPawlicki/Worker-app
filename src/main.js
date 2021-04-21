@@ -9,6 +9,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import HomePage from './pages/HomePage.vue'
 import Developer from './pages/Developer.vue'
+import Opinion from './pages/Opinion.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueMaterial)
@@ -17,6 +18,7 @@ Vue.use(VueRouter)
 const routes = [
   {path:"/", component:HomePage},
   {path:'/workers/:id', component:Developer},
+  {path:'/workers/:id/project/:projectId',component:Opinion}
 ]
 
 const router = new VueRouter({
