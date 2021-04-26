@@ -7,13 +7,13 @@ export default {
   name: "Project",
   data: () => ({
     project: {},
-    opinion: {},
+    opinions: {},
     worker:{},
   }),
   mounted() {
     const {projectId, id} = this.$route.params
     this.project = getProjectById(projectId)
-    this.opinion = getOpinionByWorkerId(this.project,id)
+    this.opinions = getOpinionByWorkerId(this.project,id)
     this.worker = getUserById(id)
   },
   methods: {

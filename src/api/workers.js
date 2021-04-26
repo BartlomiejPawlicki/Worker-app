@@ -255,6 +255,6 @@ export const workers = [
 
 export const getUserById = uuid => {
   const foundUser = find(workers, x => x.uuid === uuid);
-
+  
   return foundUser || {};
 };

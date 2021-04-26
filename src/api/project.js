@@ -11,14 +11,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: new Date(2021,5,1),
-        author: "Karol Marakas",
+        date: new Date(2015, 5, 1),
         text: "advanced skill in scss",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
       {
-        date: 2015,
-        author: "Maria Walaszek",
+        date: new Date(2015, 4, 1),
+        text: "advanced skill in html",
+        member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+      },
+      {
+        date: new Date(2015, 3, 1),
         text: "good knowledge of html",
         member_id: "0972000d-727f-416b-a04d-fdc2cc47d051"
       }
@@ -34,15 +37,18 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2016,
-        author: "Mariusz Zynaszek",
+        date: new Date(2016, 3, 1),
         text: "lack of scss knowledge",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2016,
-        author: "Zbigniew Mynaszek",
+        date: new Date(2016, 2, 1),
         text: "advanced knowledge in node.js",
+        member_id: "f9856179-1dd3-410b-b4be-5390dace4a90",
+      },
+      {
+        date: new Date(2016, 4, 1),
+        text: "advanced knowledge in react.js",
         member_id: "f9856179-1dd3-410b-b4be-5390dace4a90",
       }
     ]
@@ -57,14 +63,13 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2017,
-        author: "Bartlomiej Kaszka",
+        date: new Date(2017, 2, 1),
         text: "good job",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
+
       {
-        date: 2017,
-        author: "Marzena Zyf",
+        date: new Date(2017, 11, 1),
         text: "weak in scss",
         member_id: "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
       }
@@ -80,14 +85,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2020,
-        author: "Wlodzimierz szaranko",
+        date: new Date(2020, 2, 1),
         text: "good in data bases",
         member_id: "f9856179-1dd3-410b-b4be-5390dace4a90",
       },
       {
-        date: 2020,
-        author: "Zbigniew Maszter",
+        date: new Date(2020, 6, 1),
         text: "good job",
         member_id: "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
       }
@@ -103,14 +106,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2021,
-        author: "Marzena Lolep",
+        date: new Date(2021, 3, 1),
         text: "good in css",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2021,
-        author: "Marzena Pokrasko",
+        date: new Date(2021, 4, 1),
         text: "good in scss",
         member_id: "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
       }
@@ -126,14 +127,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2015,
-        author: "Karol Okrasa",
+        date: new Date(2015, 3, 1),
         text: "good in js and node.js",
         member_id: "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
       },
       {
-        date: 2015,
-        author: "Ula Kot",
+        date: new Date(2015, 5, 1),
         text: "good in data bases",
         member_id: "0972000d-727f-416b-a04d-fdc2cc47d051",
       }
@@ -150,20 +149,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2015,
-        author: "Iga Świątał",
+        date: new Date(2015, 1, 4),
         text: "good job",
         member_id: "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
       },
       {
-        date: 2015,
-        author: "Karina Pelesz",
+        date: new Date(2015, 8, 8),
         text: "weak in html",
         member_id: "0972000d-727f-416b-a04d-fdc2cc47d051",
       },
       {
-        date: 2015,
-        author: "Witold Ket",
+        date: new Date(2015, 6, 6),
         text: "weak in css",
         member_id: "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0",
       }
@@ -179,14 +175,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2019,
-        author: "Marek Zister",
+        date: new Date(2019, 9, 9),
         text: "good job",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2019,
-        author: "Marzena Pokrasko",
+        date: new Date(2019, 5, 1),
         text: "weak in data bases",
         member_id: "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
       }
@@ -203,20 +197,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2018,
-        author: "Malwina Szandeł",
+        date: new Date(2018, 8, 8),
         text: "good job",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2018,
-        author: "Lucyna Uter",
+        date: new Date(2018, 8, 9),
         text: "good in html",
         member_id: "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0",
       },
       {
-        date: 2018,
-        author: "Marzena Szczepko",
+        date: new Date(2018, 4, 3),
         text: "good in .NET",
         member_id: "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d",
       }
@@ -233,20 +224,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2019,
-        author: "Bartlomiej Lawap",
+        date: new Date(2019, 10, 11),
         text: "good in React JS",
         member_id: "72d165a2-413b-45de-8cfc-971aa84bf639",
       },
       {
-        date: 2019,
-        author: "Paweł Szotet",
+        date: new Date(2019, 3, 3),
         text: "good in Node JS",
         member_id: "744697ba-4279-41c4-a90b-f22d8c0f1862",
       },
       {
-        date: 2019,
-        author: "Patryk Katet",
+        date: new Date(2019, 5, 1),
         text: "good job",
         member_id: "fa909187-feb6-41ca-8c74-217dd38c1d01",
       }
@@ -263,20 +251,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2018,
-        author: "Michal Wojtek",
+        date: new Date(2018, 5, 1),
         text: "good in .NET",
         member_id: "72d165a2-413b-45de-8cfc-971aa84bf639",
       },
       {
-        date: 2018,
-        author: "Mariusz Yster",
+        date: new Date(2018, 6, 1),
         text: "weak in React JS",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2018,
-        author: "Agnieszka Simon",
+        date: new Date(2018, 9, 1),
         text: "good in scss",
         member_id: "744697ba-4279-41c4-a90b-f22d8c0f1862",
       }
@@ -293,20 +278,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2013,
-        author: "Katarzyna Kiszka",
+        date: new Date(2013, 5, 1),
         text: "good in html",
         member_id: "fa909187-feb6-41ca-8c74-217dd38c1d01",
       },
       {
-        date: 2013,
-        author: "Witold Let",
+        date: new Date(2013, 8, 1),
         text: "good in js",
         member_id: "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       },
       {
-        date: 2013,
-        author: "Marzena Sandomierska",
+        date: new Date(2013, 4, 1),
         text: "good in .NET",
         member_id: "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685",
       }
@@ -322,14 +304,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2017,
-        author: "Boguslawa Kitep",
+        date: new Date(2017, 9, 1),
         text: "good",
         member_id: "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       },
       {
-        date: 2017,
-        author: "Lukas Kaert",
+        date: new Date(2017, 3, 1),
         text: "good in html",
         member_id: "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685",
       }
@@ -346,20 +326,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2018,
-        author: "Urszula Adamczyk",
+        date: new Date(2018, 10, 11),
         text: "good job",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
       },
       {
-        date: 2018,
-        author: "Karolina Slowik",
+        date: new Date(2018, 11, 11),
         text: "good in React JS",
         member_id: "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
       },
       {
-        date: 2018,
-        author: "Wlodzimierz Szaranowicz",
+        date: new Date(2018, 9, 9),
         text: "good in scss",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       }
@@ -377,26 +354,22 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2020,
-        author: "Katarzyna Mauzer",
+        date: new Date(2020, 2, 1),
         text: "good in css",
         member_id: "511a9036-9514-4721-9249-c1a62aa5be02",
       },
       {
-        date: 2020,
-        author: "Michal Paszkiewicz",
+        date: new Date(2020, 3, 3),
         text: "good in html",
         member_id: "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
       },
       {
-        date: 2020,
-        author: "Patrycja Gringer",
+        date: new Date(2020, 9, 10),
         text: "good job",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
-        date: 2020,
-        author: "Pawel Nosik",
+        date: new Date(2020, 2, 1),
         text: "good in .NET",
         member_id: "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d",
       }
@@ -412,14 +385,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2021,
-        author: "Grzegorz Wałga",
+        date: new Date(2021, 8, 8),
         text: "good in html",
         member_id: "511a9036-9514-4721-9249-c1a62aa5be02",
       },
       {
-        date: 2021,
-        author: "Lucyna Kitelek",
+        date: new Date(2021, 8, 1),
         text: "good in React JS",
         member_id: "0972000d-727f-416b-a04d-fdc2cc47d051",
       }
@@ -435,14 +406,12 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2019,
-        author: "Helga Powianska",
+        date: new Date(2019, 2, 1),
         text: "good in HTML",
         member_id: "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       },
       {
-        date: 2019,
-        author: "Marzena Oleszuk",
+        date: new Date(2019, 9, 9),
         text: "good in SCSS",
         member_id: "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
       }
@@ -459,20 +428,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2017,
-        author: "Patrycja Sokol",
+        date: new Date(2017, 4, 1),
         text: "good in scss",
         member_id: "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       },
       {
-        date: 2017,
-        author: "Martyna Wojcisz",
+        date: new Date(2017, 5, 1),
         text: "good in Node JS",
         member_id: "0972000d-727f-416b-a04d-fdc2cc47d051",
       },
       {
-        date: 2017,
-        author: "Paweł Okraska",
+        date: new Date(2017, 9, 1),
         text: "good in css",
         member_id: "179201c4-8ea4-4c32-b066-8859694113f4",
       }
@@ -489,20 +455,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2015,
-        author: "Patryk Opop",
+        date: new Date(2015, 6, 9),
         text: "good in css",
         member_id: "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
       },
       {
-        date: 2015,
-        author: "Malwina Sandomierz",
+        date: new Date(2015, 3, 1),
         text: "good in html",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
       },
       {
-        date: 2015,
-        author: "Pawel Posazek",
+        date: new Date(2015, 2, 1),
         text: "good in Node JS",
         member_id: "179201c4-8ea4-4c32-b066-8859694113f4",
       }
@@ -519,20 +482,17 @@ const projects = [
     ],
     opinions: [
       {
-        date: 2016,
-        author: "Grzegorz Lip",
+        date: new Date(2016, 4, 1),
         text: "good in html",
         member_id: "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
       },
       {
-        date: 2016,
-        author: "Marek Swoboda",
+        date: new Date(2016, 9, 9),
         text: "good in css",
         member_id: "179201c4-8ea4-4c32-b066-8859694113f4",
       },
       {
-        date: 2016,
-        author: "Sabina Sochacka",
+        date: new Date(2016, 10, 10),
         text: "weak in React JS",
         member_id: "9275ff03-98ef-4e84-9bad-2e49c7e608b7",
       }
@@ -555,6 +515,9 @@ export const getProjectById = id => {
 
 
 export const getOpinionByWorkerId = (project, workerId) => {
- const foundOpinion = find(project.opinions,(x) => x.member_id === workerId)
- return foundOpinion || {}
+  const foundOpinions = filter(project.opinions, (x) => x.member_id === workerId)
+  console.log(foundOpinions)
+  return foundOpinions || {}
 }
+
+
