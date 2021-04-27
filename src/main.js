@@ -17,10 +17,10 @@ Vue.use(VueMaterial)
 Vue.use(VueRouter)
 
 const routes = [
-  {path:"/", component:HomePage},
+  {path:"/home", component:HomePage},
   {path:'/workers/:id', component:Developer},
   {path:'/workers/:id/project/:projectId',component:Opinion},
-  {path:'/login', component:LoginPage}
+  {path:'/', component:LoginPage}
 ]
 
 const router = new VueRouter({

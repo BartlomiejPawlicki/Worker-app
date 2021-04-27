@@ -16,8 +16,18 @@ const projects = [
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
       {
-        date: new Date(2015, 4, 1),
+        date: new Date(2015, 10, 1),
         text: "advanced skill in html",
+        member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+      },
+      {
+        date: new Date(2015, 11, 1),
+        text: "good job",
+        member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+      },
+      {
+        date: new Date(2015, 2, 1),
+        text: "problem-solving skill",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
       {
@@ -39,6 +49,11 @@ const projects = [
       {
         date: new Date(2016, 3, 1),
         text: "lack of scss knowledge",
+        member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
+      },
+      {
+        date: new Date(2016, 5, 1),
+        text: "lack of js knowledge",
         member_id: "9853aed8-ed51-48f9-8f91-9212af5575a4",
       },
       {
@@ -67,7 +82,16 @@ const projects = [
         text: "good job",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
-
+      {
+        date: new Date(2017, 11, 1),
+        text: "advanced skill in html",
+        member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+      },
+      {
+        date: new Date(2017, 9, 1),
+        text: "advanced skill in js",
+        member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+      },
       {
         date: new Date(2017, 11, 1),
         text: "weak in scss",
@@ -516,7 +540,6 @@ export const getProjectById = id => {
 
 export const getOpinionByWorkerId = (project, workerId) => {
   const foundOpinions = filter(project.opinions, (x) => x.member_id === workerId)
-  console.log(foundOpinions)
   return foundOpinions || {}
 }
 

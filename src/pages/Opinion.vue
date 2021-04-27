@@ -2,13 +2,15 @@
   <div class="opinion">
     <div class="opinion-details">
       <div class="opinion-header">
-        <h1>{{ project.name }}</h1>
+        <h1>Project: {{ project.name }}</h1>
       </div>
     
       <div v-for="opinion in opinions" :key="opinion.index">
         <div>
+          <div class="opinion-date">
           {{formatDate(opinion.date) }}
-          {{ opinion.text }}
+          </div>
+          opinion: {{ opinion.text }}
         </div>
       </div>
     </div>
@@ -37,6 +39,11 @@
 }
 .opinion-header {
   margin: 50px 0 20px 0;
+}
+.opinion-date {
+  padding-top:15px;
+  margin:15px 0 10px 0 ;
+  border-top:3px solid white;
 }
 .opinion-button {
   margin: 50px 0 0 30px;
