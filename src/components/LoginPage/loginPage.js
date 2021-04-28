@@ -9,15 +9,12 @@ export default {
     response: {},
   }),
   methods: {
-    handleSubmit(e) {
-      e.preventDefault(e)
-    },
     login() {
       this.response = getUserByEmail(this.email, this.password)
       if (this.response.status === 200) {
-        localStorage.setItem("fullName",this.response.data.first_name + " " + this.response.data.last_name)
+        localStorage.setItem("user",JSON.stringify(this.response.data))
         this.$router.push({ path: 'home' })
       }
-    }
+    } 
   }
 }

@@ -29,7 +29,9 @@
           small
         >
           <template #cell(actions)="data">
-                <router-link :to="`/workers/${data.item.uuid}`">see details</router-link>
+            <router-link :to="`/workers/${data.item.uuid}`"
+              >see details</router-link
+            >
           </template>
         </b-table>
       </div>
@@ -45,12 +47,15 @@
 </template>
 
 <script src="../components/HomePage/homePage.js">
- 
 </script>
 
 <style scoped>
 .md-field {
   max-width: 300px;
+  margin-bottom: 100px;
+}
+.md-layout {
+  margin: 0;
 }
 
 table {
@@ -73,8 +78,8 @@ tr:nth-child(even) {
 td span {
   margin-right: 6px;
 }
- 
+
 * {
-  max-width:1500px;
+  max-width: 1500px;
 }
 </style>

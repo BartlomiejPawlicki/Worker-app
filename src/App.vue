@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <div class="routing" v-if="this.$route.path !== '/'">
+      <Footer/>
+    </div>
   </div>
 </template>
 
 <script>
-
-
+import Footer from "./pages/Footer.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  }
-}
+    Footer
+  },
+};
 </script>
 
 <style>
@@ -21,7 +24,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+}
+.routing {
+  position: absolute;
+  bottom:0px;
+  width:100%;
 }
 </style>

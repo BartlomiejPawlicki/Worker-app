@@ -73,7 +73,7 @@ export const workers = [
     email: "marek.konrad@gmail.com",
     password: "awqoqu",
     img: "https://randomuser.me/api/portraits/men/83.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "node",
@@ -87,7 +87,7 @@ export const workers = [
     email: "sabina.tar@gmail.com",
     password: "jjyvao",
     img: "https://randomuser.me/api/portraits/women/43.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "net",
@@ -101,7 +101,7 @@ export const workers = [
     email: "joanna.kert@gmail.com",
     password: "wvxjdv",
     img: "https://randomuser.me/api/portraits/men/7.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "net",
@@ -119,7 +119,7 @@ export const workers = [
     email: "marcelina.kasz@gmail.com",
     password: "jmodik",
     img: "https://randomuser.me/api/portraits/men/7.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "node",
@@ -151,7 +151,7 @@ export const workers = [
     email: "henryk.wasz@gmail.com",
     password: "hkmqkf",
     img: "https://randomuser.me/api/portraits/men/47.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "node",
@@ -183,7 +183,7 @@ export const workers = [
     email: "władysław.kokosz@gmail.com",
     password: "ocalzl",
     img: "https://randomuser.me/api/portraits/men/89.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "node",
@@ -201,7 +201,7 @@ export const workers = [
     email: "sabina.seas@gmail.com",
     password: "gpnwvv",
     img: "https://randomuser.me/api/portraits/women/50.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "net",
@@ -219,7 +219,7 @@ export const workers = [
     email: "julia.zdzieblo@gmail.com",
     password: "cmfdgb",
     img: "https://randomuser.me/api/portraits/men/74.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "net",
@@ -279,7 +279,7 @@ export const workers = [
     email: "lucyna.warszawa@gmail.com",
     password: "jpbvwq",
     img: "https://randomuser.me/api/portraits/women/47.jpg",
-    role: "common",
+    role: "user",
     specializations: [
       {
         code: "c#",
@@ -300,7 +300,7 @@ export const getUserByEmail = (email, password) => {
   }
   return {
     data: {
-      error: "credentials incorrect",
+      error: "wrong email",
     },
     status: 404,
   }
@@ -313,7 +313,7 @@ const validatePassword = (foundUser, password) => {
       status: 200,
     } : {
       data: {
-        error: "credentials incorrect",
+        error: "wrong password",
       },
       status: 404,
     }

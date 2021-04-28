@@ -22,7 +22,6 @@
           <div class="validation-alert" v-if="response.status === 404">
             {{ response.data.error }}
           </div>
-          <!-- <router-link to="home">users</router-link> -->
         </div>
       </div>
     </form>
@@ -59,10 +58,10 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .page-header::after {
-  margin-top:15px;
-  display:block;
-  border-bottom:2px solid grey;
-  content:" "
+  margin-top: 15px;
+  display: block;
+  border-bottom: 2px solid grey;
+  content: " ";
 }
 .page-button {
   background-color: rgb(48, 117, 245);

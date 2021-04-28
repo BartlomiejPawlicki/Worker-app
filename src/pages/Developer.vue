@@ -29,7 +29,7 @@
   margin-bottom: 50px;
 }
 .developer {
-  margin:30px 0 0 30px;
+  padding:30px 0 0 30px;
 }
 .developer-details {
   display: flex;
