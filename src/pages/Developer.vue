@@ -8,7 +8,7 @@
         <span class="developer-email"> {{ worker.email }} </span>
       </p>
     </div>
-    <b-table :items="projects" :fields="fields">
+    <b-table :items="projects" :fields="computedFields">
       <template #cell(opinions)="data">
         <router-link
           :to="`/workers/${$route.params.id}/project/${data.item.id}`"
@@ -29,7 +29,7 @@
   margin-bottom: 50px;
 }
 .developer {
-  padding:30px 0 0 30px;
+  padding: 30px 0 0 30px;
 }
 .developer-details {
   display: flex;
@@ -56,7 +56,7 @@
   background: rgb(121, 117, 117);
 }
 .md-icon:hover {
-    color:white;
-    transition:1s
+  color: white;
+  transition: 1s;
 }
 </style>
