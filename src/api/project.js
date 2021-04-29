@@ -3,7 +3,8 @@ import { filter, find } from "lodash";
 const projects = [
   {
     id: 1,
-    date: 2015,
+    start_date: 2015,
+    end_date: 2017,
     name: "Itaka",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
@@ -39,7 +40,8 @@ const projects = [
   },
   {
     id: 2,
-    date: 2016,
+    start_date: 2016,
+    end_date: 2019,
     name: "eBilet",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
@@ -70,7 +72,8 @@ const projects = [
   },
   {
     id: 3,
-    date: 2017,
+    start_date: 2017,
+    end_date: "still active",
     name: "Barbados",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
@@ -101,7 +104,8 @@ const projects = [
   },
   {
     id: 4,
-    date: 2020,
+    start_date: 2020,
+    end_date: "still active",
     name: "Raisen",
     members: [
       "f9856179-1dd3-410b-b4be-5390dace4a90",
@@ -122,7 +126,8 @@ const projects = [
   },
   {
     id: 5,
-    date: 2021,
+    start_date: 2021,
+    end_date: "still active",
     name: "Bewert",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
@@ -143,7 +148,8 @@ const projects = [
   },
   {
     id: 6,
-    date: 2015,
+    start_date: 2015,
+    end_date: 2017,
     name: "Wytep",
     members: [
       "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
@@ -164,7 +170,8 @@ const projects = [
   },
   {
     id: 7,
-    date: 2015,
+    start_date: 2015,
+    end_date: 2016,
     name: "Itaka",
     members: [
       "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
@@ -191,7 +198,8 @@ const projects = [
   },
   {
     id: 8,
-    date: 2019,
+    start_date: 2019,
+    end_date: 2021,
     name: "Xiaong",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
@@ -212,7 +220,8 @@ const projects = [
   },
   {
     id: 9,
-    date: 2018,
+    start_date: 2018,
+    end_date: 2019,
     name: "Setelt",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
@@ -239,7 +248,8 @@ const projects = [
   },
   {
     id: 10,
-    date: 2019,
+    start_date: 2019,
+    end_date: 2020,
     name: "Kenent",
     members: [
       "72d165a2-413b-45de-8cfc-971aa84bf639",
@@ -266,7 +276,8 @@ const projects = [
   },
   {
     id: 11,
-    date: 2018,
+    start_date: 2018,
+    end_date: 2020,
     name: "Mevert",
     members: [
       "72d165a2-413b-45de-8cfc-971aa84bf639",
@@ -293,7 +304,8 @@ const projects = [
   },
   {
     id: 12,
-    date: 2013,
+    start_date: 2013,
+    end_date: 2015,
     name: "Uzym",
     members: [
       "fa909187-feb6-41ca-8c74-217dd38c1d01",
@@ -320,7 +332,8 @@ const projects = [
   },
   {
     id: 13,
-    date: 2017,
+    start_date: 2017,
+    end_date: 2019,
     name: "Measert",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
@@ -341,7 +354,8 @@ const projects = [
   },
   {
     id: 14,
-    date: 2018,
+    start_date: 2018,
+    end_date: 2020,
     name: "Wyeszaw",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
@@ -368,7 +382,8 @@ const projects = [
   },
   {
     id: 15,
-    date: 2020,
+    start_date: 2020,
+    end_date: "still active",
     name: "Oden",
     members: [
       "511a9036-9514-4721-9249-c1a62aa5be02",
@@ -401,7 +416,8 @@ const projects = [
   },
   {
     id: 16,
-    date: 2021,
+    start_date: 2021,
+    end_date: "still active",
     name: "Fallent",
     members: [
       "511a9036-9514-4721-9249-c1a62aa5be02",
@@ -422,7 +438,8 @@ const projects = [
   },
   {
     id: 17,
-    date: 2019,
+    start_date: 2019,
+    end_date: "still active",
     name: "Ymaw",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
@@ -443,7 +460,8 @@ const projects = [
   },
   {
     id: 18,
-    date: 2017,
+    start_date: 2017,
+    end_date: 2019,
     name: "Keysza",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
@@ -470,7 +488,8 @@ const projects = [
   },
   {
     id: 19,
-    date: 2015,
+    start_date: 2015,
+    end_date: 2018,
     name: "Mazepaw",
     members: [
       "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
@@ -497,7 +516,8 @@ const projects = [
   },
   {
     id: 20,
-    date: 2016,
+    start_date: 2017,
+    end_date: 2019,
     name: "Usen",
     members: [
       "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
