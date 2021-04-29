@@ -8,17 +8,17 @@ export default {
     worker: {},
     projects: [],
     fields: [...customFields, { key: "opinions", requiresManager: true }],
-    isManagerLogged:false,
+    isManagerLogged: false,
   }),
   mounted() {
     const uuid = this.$route.params.id
     this.worker = getUserById(uuid)
     this.projects = getProjectsByWorkerId(uuid)
-    
+
     const userStorage = JSON.parse(localStorage.getItem("user"))
     const userRole = userStorage.role
-    if(userRole === "manager") {
-        this.isManagerLogged = true
+    if (userRole === "manager") {
+      this.isManagerLogged = true
     }
   },
   computed: {

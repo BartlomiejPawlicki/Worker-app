@@ -1,5 +1,9 @@
 <template>
-  <div class="footer">you are logged in as</div>
+  <div class="footer">
+    <div>
+      {{workerStorage}}
+    </div>
+  </div>
 </template>
 
 
