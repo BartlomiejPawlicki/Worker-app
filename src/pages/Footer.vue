@@ -1,7 +1,10 @@
 <template>
   <div class="footer">
-    <div>
-      {{workerStorage}}
+    <div class="footer-container">
+      {{ user.first_name }} {{ user.last_name }}
+      <div class="footer-details">
+        is logged as a {{ user.role }}
+      </div>
     </div>
   </div>
 </template>
@@ -11,7 +14,7 @@
 </script>
 
 <style scoped>
-.footer {
+.footer-container {
   background-color: #222831;
   color: white;
   justify-content: center;
@@ -20,5 +23,8 @@
   align-items: center;
   display: flex;
   font-weight: bold;
+}
+.footer-details {
+  padding-left:5px;
 }
 </style>
