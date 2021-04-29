@@ -180,7 +180,7 @@ export const workers = [
     uuid: "fa909187-feb6-41ca-8c74-217dd38c1d01",
     first_name: "Wladysław",
     last_name: "Kokosz",
-    email: "władysław.kokosz@gmail.com",
+    email: "wladyslaw.kokosz@gmail.com",
     password: "ocalzl",
     img: "https://randomuser.me/api/portraits/men/89.jpg",
     role: "user",
@@ -293,6 +293,7 @@ export const getUserById = uuid => {
   const foundUser = find(workers, x => x.uuid === uuid);
   return foundUser || {};
 };
+
 export const getUserByEmail = (email, password) => {
   const foundUser = find(workers, x => x.email === email);
   if (foundUser) {

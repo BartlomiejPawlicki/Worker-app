@@ -7,17 +7,23 @@ export default {
   data: () => ({
     worker: {},
     projects: [],
-    fields: [...customFields, { key: "opinions", requiresManager:true }],
-    isUserAdmin:false,
+    fields: [...customFields, { key: "opinions", requiresManager: true }],
+    isManagerLogged:false,
   }),
   mounted() {
     const uuid = this.$route.params.id
     this.worker = getUserById(uuid)
     this.projects = getProjectsByWorkerId(uuid)
+    
+    const userStorage = JSON.parse(localStorage.getItem("user"))
+    const userRole = userStorage.role
+    if(userRole === "manager") {
+        this.isManagerLogged = true
+    }
   },
   computed: {
     computedFields() {
-      if (!this.isUserAdmin)
+      if (!this.isManagerLogged)
         return this.fields.filter(field => !field.requiresManager);
       else
         return this.fields;
@@ -28,4 +34,3 @@ export default {
 };
 
 // thClass: 'd-none', tdClass: 'd-none'
-// console.log(this.fields[3])
