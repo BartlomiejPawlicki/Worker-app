@@ -4,11 +4,13 @@
       <div class="opinion-header">
         <h1>Project: {{ project.name }}</h1>
       </div>
-    
       <div v-for="opinion in opinions" :key="opinion.index">
         <div>
           <div class="opinion-date">
-          {{formatDate(opinion.date) }}
+            {{ formatDate(opinion.date) }}
+          </div>
+          <div class="opinion-author">
+            author: {{ opinion.author_first_name }} {{ opinion.author_last_name }}
           </div>
           opinion: {{ opinion.text }}
         </div>
@@ -41,12 +43,15 @@
   margin: 50px 0 20px 0;
 }
 .opinion-date {
-  padding-top:15px;
-  margin:15px 0 10px 0 ;
-  border-top:3px solid white;
+  padding-top: 15px;
+  margin: 15px 0 10px 0;
+  border-top: 3px solid white;
+}
+.opinion-author {
+  margin:10px 0 10px 0
 }
 .opinion-button {
-  margin: 50px 0 0 30px;
+  margin: 50px 0 50px 30px;
   display: flex;
   background: white;
   outline: none;
