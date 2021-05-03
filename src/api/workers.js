@@ -1,4 +1,3 @@
-import { find } from "lodash";
 
 export const workers = [
   {
@@ -290,12 +289,12 @@ export const workers = [
 ]
 
 export const getUserById = uuid => {
-  const foundUser = find(workers, x => x.uuid === uuid);
+  const foundUser = workers.find(x => x.uuid === uuid);
   return foundUser || {};
 };
 
 export const getUserByEmail = (email, password) => {
-  const foundUser = find(workers, x => x.email === email);
+  const foundUser = workers.find(x => x.email === email);
   if (foundUser) {
     return validatePassword(foundUser, password)
   }

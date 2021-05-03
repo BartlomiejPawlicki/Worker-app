@@ -50,6 +50,13 @@
 </script>
 
 <style scoped>
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+  margin-top: 50px;
+}
 .md-field {
   max-width: 300px;
   margin-bottom: 100px;

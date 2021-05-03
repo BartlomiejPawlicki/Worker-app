@@ -8,24 +8,26 @@
         <span class="developer-email"> {{ worker.email }} </span>
       </p>
     </div>
-    <b-table :items="projects" :fields="computedFields">
-      <template #cell(opinions)="data">
+    <b-table :items="projects" :fields="fields">
+      <template #cell(projectDescription)="data">
         <router-link
           :to="`/workers/${$route.params.id}/project/${data.item.id}`"
-          >see project</router-link
+          >see project description<span v-if="checkWorkerStatus()">&nbsp;({{data.item.opinions.length}})</span></router-link
         >
       </template>
     </b-table>
-    <button @click="$router.back()" class="developer-button">
-      <md-icon> arrow_back</md-icon>
-    </button>
+    <div class="developer-button-box">
+      <button @click="$router.back()" class="developer-button">
+        <md-icon> arrow_back</md-icon>
+      </button>
+    </div>
   </div>
 </template>
 <script src="../components/Developer/developer.js">
 </script>
 <style scoped>
 .table {
-  width: 80%;
+  width: 85%;
   margin-bottom: 50px;
 }
 .developer {
@@ -43,7 +45,7 @@
   display: block;
 }
 .developer-button {
-  margin-left: 30px;
+  margin: 0 0 30px 30px;
   display: flex;
   background: none;
   outline: none;
@@ -54,6 +56,10 @@
 }
 .developer-button:hover {
   background: rgb(121, 117, 117);
+}
+.developer-button-box {
+  margin-bottom: 30px;
+  display: flex;
 }
 .md-icon:hover {
   color: white;

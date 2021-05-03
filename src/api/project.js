@@ -6,6 +6,7 @@ const projects = [
     start_date: 2015,
     end_date: 2017,
     name: "Itaka",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
       "0972000d-727f-416b-a04d-fdc2cc47d051",
@@ -21,7 +22,7 @@ const projects = [
       {
         author_first_name: "Marcelina",
         author_last_name: "Wart",
-        date: new Date(2015, 11, 1),
+        date: new Date(2015, 9, 1),
         text: "good job",
         member_id: "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
       },
@@ -39,6 +40,7 @@ const projects = [
     start_date: 2016,
     end_date: 2019,
     name: "eBilet",
+    description: "This project will develop a module offered to air lines, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
       "f9856179-1dd3-410b-b4be-5390dace4a90",
@@ -79,6 +81,7 @@ const projects = [
     start_date: 2017,
     end_date: "still active",
     name: "Barbados",
+    description: "This project will develop a module offered to Valeo, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
       "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
@@ -119,6 +122,7 @@ const projects = [
     start_date: 2020,
     end_date: "still active",
     name: "Raisen",
+    description: "This project will develop a module offered to army, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "f9856179-1dd3-410b-b4be-5390dace4a90",
       "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
@@ -145,6 +149,7 @@ const projects = [
     start_date: 2021,
     end_date: "still active",
     name: "Bewert",
+    description: "This project will develop a module offered to Eaton, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
       "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
@@ -171,6 +176,7 @@ const projects = [
     start_date: 2015,
     end_date: 2017,
     name: "Wytep",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
       "0972000d-727f-416b-a04d-fdc2cc47d051",
@@ -196,7 +202,8 @@ const projects = [
     id: 7,
     start_date: 2015,
     end_date: 2016,
-    name: "Itaka",
+    name: "TUI",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
       "0972000d-727f-416b-a04d-fdc2cc47d051",
@@ -231,6 +238,7 @@ const projects = [
     start_date: 2019,
     end_date: 2021,
     name: "Xiaong",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
       "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
@@ -257,6 +265,7 @@ const projects = [
     start_date: 2018,
     end_date: 2019,
     name: "Setelt",
+    description: "This project will develop a module offered to Ford, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
       "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0",
@@ -291,6 +300,7 @@ const projects = [
     start_date: 2019,
     end_date: 2020,
     name: "Kenent",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "72d165a2-413b-45de-8cfc-971aa84bf639",
       "744697ba-4279-41c4-a90b-f22d8c0f1862",
@@ -325,6 +335,7 @@ const projects = [
     start_date: 2018,
     end_date: 2020,
     name: "Mevert",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "72d165a2-413b-45de-8cfc-971aa84bf639",
       "9853aed8-ed51-48f9-8f91-9212af5575a4",
@@ -359,6 +370,7 @@ const projects = [
     start_date: 2013,
     end_date: 2015,
     name: "Uzym",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "fa909187-feb6-41ca-8c74-217dd38c1d01",
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
@@ -393,6 +405,7 @@ const projects = [
     start_date: 2017,
     end_date: 2019,
     name: "Measert",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685",
@@ -419,6 +432,7 @@ const projects = [
     start_date: 2018,
     end_date: 2020,
     name: "Wyeszaw",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
       "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
@@ -453,6 +467,7 @@ const projects = [
     start_date: 2020,
     end_date: "still active",
     name: "Oden",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "511a9036-9514-4721-9249-c1a62aa5be02",
       "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
@@ -495,6 +510,7 @@ const projects = [
     start_date: 2021,
     end_date: "still active",
     name: "Fallent",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "511a9036-9514-4721-9249-c1a62aa5be02",
       "0972000d-727f-416b-a04d-fdc2cc47d051",
@@ -521,6 +537,7 @@ const projects = [
     start_date: 2019,
     end_date: "still active",
     name: "Ymaw",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
@@ -547,6 +564,7 @@ const projects = [
     start_date: 2017,
     end_date: 2019,
     name: "Keysza",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
       "0972000d-727f-416b-a04d-fdc2cc47d051",
@@ -581,6 +599,7 @@ const projects = [
     start_date: 2015,
     end_date: 2018,
     name: "Mazepaw",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
       "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
@@ -615,6 +634,7 @@ const projects = [
     start_date: 2017,
     end_date: 2019,
     name: "Usen",
+    description: "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
     members: [
       "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
       "179201c4-8ea4-4c32-b066-8859694113f4",
@@ -648,7 +668,7 @@ const projects = [
 
 
 export const getProjectsByWorkerId = uuid => {
-  const foundProjects = filter(projects, (x) => x.members.find((a) => a === uuid))
+  const foundProjects = projects.filter(x => x.members.find(a => a === uuid))
   return foundProjects || [];
 };
 
@@ -656,7 +676,6 @@ export const getProjectsByWorkerId = uuid => {
 export const getProjectById = id => {
   const foundProject = find(projects, (x) => x.id == id)
   return foundProject || {};
-
 };
 
 
@@ -664,5 +683,3 @@ export const getOpinionByWorkerId = (project, workerId) => {
   const foundOpinions = filter(project.opinions, (x) => x.member_id === workerId)
   return foundOpinions || {}
 }
-
-

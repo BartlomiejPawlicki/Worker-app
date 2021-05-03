@@ -3,16 +3,22 @@
     <div class="opinion-details">
       <div class="opinion-header">
         <h1>Project: {{ project.name }}</h1>
+        <div class="opinion-description">
+          <p>project description: {{ project.description }}</p>
+        </div>
       </div>
       <div v-for="opinion in opinions" :key="opinion.index">
-        <div>
-          <div class="opinion-date">
-            {{ formatDate(opinion.date) }}
+        <div v-if="checkWorkerStatus()">
+          <div>
+            <div class="opinion-date">
+              {{ formatDate(opinion.date) }}
+            </div>
+            <div class="opinion-author">
+              author: {{ opinion.author_first_name }}
+              {{ opinion.author_last_name }}
+            </div>
+            opinion: {{ opinion.text }}
           </div>
-          <div class="opinion-author">
-            author: {{ opinion.author_first_name }} {{ opinion.author_last_name }}
-          </div>
-          opinion: {{ opinion.text }}
         </div>
       </div>
     </div>
@@ -39,8 +45,11 @@
   border-radius: 5px;
   padding-bottom: 25px;
 }
+.opinion-description {
+  margin: 30px 30px;
+}
 .opinion-header {
-  margin: 50px 0 20px 0;
+  margin: 30px 0 30px 0;
 }
 .opinion-date {
   padding-top: 15px;
@@ -48,7 +57,7 @@
   border-top: 3px solid white;
 }
 .opinion-author {
-  margin:10px 0 10px 0
+  margin: 10px 0 10px 0;
 }
 .opinion-button {
   margin: 50px 0 50px 30px;

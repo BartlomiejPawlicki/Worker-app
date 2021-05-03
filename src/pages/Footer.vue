@@ -14,6 +14,10 @@
 </script>
 
 <style scoped>
+.footer {
+  position:absolute;
+  width: 100%;
+}
 .footer-container {
   background-color: #222831;
   color: white;

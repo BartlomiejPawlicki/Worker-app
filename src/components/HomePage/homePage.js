@@ -1,5 +1,5 @@
 import { isEmpty, filter } from "lodash";
-import {workers} from '../../api/workers.js'
+import { workers } from '../../api/workers.js'
 import customFields from "./fields";
 
 
@@ -8,7 +8,7 @@ const prepareSpecializationsForDisplay = (data) => {
     ...x,
     specializations: x.specializations.map((x) => x.name).join(", "),
   }));
-  
+
   return results
 }
 
@@ -51,10 +51,10 @@ export default {
       const results = isEmpty(selectedFilters)
         ? this.workers
         : filter(this.workers, (x) =>
-            x.specializations
-              .map((s) => s.code)
-              .some((r) => selectedFilters.indexOf(r) !== -1)
-          );
+          x.specializations
+            .map((s) => s.code)
+            .some((r) => selectedFilters.indexOf(r) !== -1)
+        );
 
       this.filteredWorkers = prepareSpecializationsForDisplay(results);
     },
