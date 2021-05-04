@@ -22,12 +22,43 @@
         </div>
       </div>
     </div>
-    <button class="opinion-button" @click="$router.back()">
-      <md-icon> arrow_back</md-icon>
-    </button>
+    <ReturnButton />
   </div>
 </template>
-<script src="../components/Opinion/opinion.js">
+<script>
+import moment from "moment";
+import { getProjectById, getOpinionByWorkerId } from "../api/project";
+import { getUserById } from "../api/workers";
+import ReturnButton from "../Components/ReturnButton";
+
+export default {
+  name: "Project",
+  components: {
+    ReturnButton,
+  },
+  data: () => ({
+    project: {},
+    opinions: {},
+    worker: {},
+    isManagerLogged: false,
+  }),
+  mounted() {
+    const { projectId, id } = this.$route.params;
+    this.project = getProjectById(projectId);
+    this.opinions = getOpinionByWorkerId(this.project, id);
+    this.worker = getUserById(id);
+  },
+  methods: {
+    formatDate: function (date) {
+      return moment(date).format("YYYY-MM-DD");
+    },
+    checkWorkerStatus() {
+      const userStorage = JSON.parse(localStorage.getItem("user"));
+      const userRole = userStorage.role;
+      return userRole === "manager";
+    },
+  },
+};
 </script>
 
 
@@ -58,26 +89,5 @@
 }
 .opinion-author {
   margin: 10px 0 10px 0;
-}
-.opinion-button {
-  margin: 50px 0 50px 30px;
-  display: flex;
-  background: white;
-  outline: none;
-  border: 2px solid grey;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.opinion-button:hover {
-  background-color: rgb(194, 189, 189);
-}
-.md-icon {
-  color: white;
-  transition: 1s;
-}
-.md-icon:hover {
-  color: white;
-  transition: 1s;
 }
 </style>

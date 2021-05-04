@@ -1,5 +1,3 @@
-import { filter, find } from "lodash";
-
 const projects = [
   {
     id: 1,
@@ -674,12 +672,12 @@ export const getProjectsByWorkerId = uuid => {
 
 
 export const getProjectById = id => {
-  const foundProject = find(projects, (x) => x.id == id)
+  const foundProject = projects.find(x => x.id == id)
   return foundProject || {};
 };
 
 
 export const getOpinionByWorkerId = (project, workerId) => {
-  const foundOpinions = filter(project.opinions, (x) => x.member_id === workerId)
+  const foundOpinions = project.opinions.filter(x => x.member_id === workerId)
   return foundOpinions || {}
 }

@@ -12,18 +12,62 @@
       <template #cell(projectDescription)="data">
         <router-link
           :to="`/workers/${$route.params.id}/project/${data.item.id}`"
-          >see project description<span v-if="checkWorkerStatus()">&nbsp;({{data.item.opinions.length}})</span></router-link
+          >see project description<span v-if="checkWorkerStatus()">
+            ({{ data.item.opinions.length }})</span
+          ></router-link
         >
       </template>
     </b-table>
-    <div class="developer-button-box">
-      <button @click="$router.back()" class="developer-button">
-        <md-icon> arrow_back</md-icon>
-      </button>
-    </div>
+    <ReturnButton />
   </div>
 </template>
-<script src="../components/Developer/developer.js">
+<script>
+import { getProjectsByWorkerId } from "../api/project";
+import { getUserById } from "../api/workers";
+import ReturnButton from "../Components/ReturnButton";
+
+export default {
+  name: "Developer",
+  components: {
+    ReturnButton,
+  },
+  data: () => ({
+    worker: {},
+    projects: [],
+    fields: [
+      {
+        key: "start_date",
+        sortable: true,
+        label: "Project Start Date",
+      },
+      {
+        key: "end_date",
+        sortable: true,
+        label: "Project End Date",
+      },
+      {
+        key: "name",
+        sortable: true,
+        label: "Project Name",
+      },
+      { key: "projectDescription" },
+    ],
+    project: {},
+    isManagerlogged: false,
+  }),
+  mounted() {
+    const uuid = this.$route.params.id;
+    this.worker = getUserById(uuid);
+    this.projects = getProjectsByWorkerId(uuid);
+  },
+  methods: {
+    checkWorkerStatus() {
+      const userStorage = JSON.parse(localStorage.getItem("user"));
+      const userRole = userStorage.role;
+      return userRole === "manager";
+    },
+  },
+};
 </script>
 <style scoped>
 .table {
@@ -43,26 +87,5 @@
 }
 .developer-email {
   display: block;
-}
-.developer-button {
-  margin: 0 0 30px 30px;
-  display: flex;
-  background: none;
-  outline: none;
-  border: 2px solid grey;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.developer-button:hover {
-  background: rgb(121, 117, 117);
-}
-.developer-button-box {
-  margin-bottom: 30px;
-  display: flex;
-}
-.md-icon:hover {
-  color: white;
-  transition: 1s;
 }
 </style>

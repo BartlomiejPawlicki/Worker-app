@@ -46,7 +46,84 @@
   </div>
 </template>
 
-<script src="../components/HomePage/homePage.js">
+<script>
+import { isEmpty } from "lodash";
+import { workers } from "../api/workers";
+
+const prepareSpecializationsForDisplay = (data) => {
+  const results = data.map((x) => ({
+    ...x,
+    specializations: x.specializations.map((x) => x.name).join(", "),
+  }));
+
+  return results;
+};
+
+export default {
+  name: "HomePage",
+  data: () => ({
+    selectedFilters: [],
+    workers: workers,
+    filteredWorkers: prepareSpecializationsForDisplay(workers),
+    perPage: 6,
+    currentPage: 1,
+    fields: [
+      {
+        key: "uuid",
+        sortable: true,
+        label: "ID",
+      },
+      {
+        key: "first_name",
+        sortable: true,
+      },
+      {
+        key: "last_name",
+        sortable: true,
+      },
+      {
+        key: "specializations",
+      },
+      { key: "actions" },
+    ],
+    filters: [
+      {
+        code: "net",
+        name: ".NET",
+      },
+      {
+        code: "react",
+        name: "React JS",
+      },
+      {
+        code: "c#",
+        name: "C#",
+      },
+      {
+        code: "node",
+        name: "Node JS",
+      },
+    ],
+  }),
+  computed: {
+    rows() {
+      return this.filteredWorkers.length;
+    },
+  },
+  methods: {
+    onChange(selectedFilters) {
+      const results = isEmpty(selectedFilters)
+        ? this.workers
+        : this.workers.filter((x) =>
+            x.specializations
+              .map((s) => s.code)
+              .some((r) => selectedFilters.indexOf(r) !== -1)
+          );
+
+      this.filteredWorkers = prepareSpecializationsForDisplay(results);
+    },
+  },
+};
 </script>
 
 <style scoped>
