@@ -681,3 +681,4 @@ export const getOpinionByWorkerId = (project, workerId) => {
   const foundOpinions = project.opinions.filter(x => x.member_id === workerId)
   return foundOpinions || {}
 }
+

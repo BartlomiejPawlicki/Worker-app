@@ -47,6 +47,7 @@ export default {
     this.project = getProjectById(projectId);
     this.opinions = getOpinionByWorkerId(this.project, id);
     this.worker = getUserById(id);
+    console.log(this.opinions.length)
   },
   methods: {
     formatDate: function (date) {

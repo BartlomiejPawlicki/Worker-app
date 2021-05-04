@@ -11,9 +11,14 @@
     <b-table :items="projects" :fields="fields">
       <template #cell(projectDescription)="data">
         <router-link
+          class="developer-link"
           :to="`/workers/${$route.params.id}/project/${data.item.id}`"
-          >see project description<span v-if="checkWorkerStatus()">
-            ({{ data.item.opinions.length }})</span
+        >
+          see project description<span
+            v-if="checkWorkerStatus()"
+            class="developer-quantity"
+          >
+            {{ getOpinionsForProject(data.item).length }}</span
           ></router-link
         >
       </template>
@@ -21,6 +26,7 @@
     <ReturnButton />
   </div>
 </template>
+
 <script>
 import { getProjectsByWorkerId } from "../api/project";
 import { getUserById } from "../api/workers";
@@ -52,7 +58,6 @@ export default {
       },
       { key: "projectDescription" },
     ],
-    project: {},
     isManagerlogged: false,
   }),
   mounted() {
@@ -65,6 +70,9 @@ export default {
       const userStorage = JSON.parse(localStorage.getItem("user"));
       const userRole = userStorage.role;
       return userRole === "manager";
+    },
+    getOpinionsForProject(project) {
+      return project.opinions.filter((x) => x.member_id === this.worker.uuid);
     },
   },
 };
@@ -87,5 +95,20 @@ export default {
 }
 .developer-email {
   display: block;
+}
+.developer-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.developer-quantity {
+  background: rgb(68, 70, 184);
+  border-radius: 15px;
+  color: White;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  font-size: 10px;
+  padding: 4px;
 }
 </style>
