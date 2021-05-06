@@ -47,8 +47,6 @@
 </template>
 
 <script>
-import { workers } from "../api/workers";
-
 const prepareSpecializationsForDisplay = (data) => {
   const results = data.map((x) => ({
     ...x,
@@ -62,7 +60,7 @@ export default {
   name: "HomePage",
   data: () => ({
     selectedFilters: [],
-    workers: workers,
+    workers: [],
     perPage: 6,
     currentPage: 1,
     fields: [
@@ -114,6 +112,16 @@ export default {
           );
       return prepareSpecializationsForDisplay(results);
     },
+  },
+  mounted() {
+    const self = this;
+    const fetchUsers = async (url) => {
+      const response = await fetch(url);
+      const json = await response.json();
+      self.workers = json;
+    };
+
+    fetchUsers("http://localhost:3000/workers");
   },
   methods: {
     onChange(selectedFilters) {

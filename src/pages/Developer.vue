@@ -9,7 +9,7 @@
       </p>
     </div>
     <b-table :items="projects" :fields="fields">
-      <template #cell(projectDescription)="{item:project}">
+      <template #cell(projectDescription)="{ item: project }">
         <router-link
           class="developer-link"
           :to="`/workers/${$route.params.id}/project/${project.id}`"
@@ -98,7 +98,6 @@ export default {
 }
 .developer-link {
   position: relative;
-  display: flex;
   justify-content: center;
 }
 .developer-quantity {
@@ -107,7 +106,7 @@ export default {
   color: White;
   position: absolute;
   top: -10px;
-  right: 25px;
+  right: -15px;
   font-size: 10px;
   padding: 4px;
 }

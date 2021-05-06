@@ -25,6 +25,7 @@ export default {
 .footer {
   position: absolute;
   width: 100%;
+  bottom:0;
 }
 .footer-container {
   background-color: #222831;

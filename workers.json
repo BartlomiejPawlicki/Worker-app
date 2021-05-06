@@ -1,0 +1,974 @@
+{
+  "workers": [
+    {
+      "uuid": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
+      "first_name": "Karolina",
+      "last_name": "Water",
+      "email": "karolina.water@gmail.com",
+      "password": "123456",
+      "img": "https://randomuser.me/api/portraits/men/94.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "0972000d-727f-416b-a04d-fdc2cc47d051",
+      "first_name": "Marcelina",
+      "last_name": "Wart",
+      "email": "marcelina.wart@gmail.com",
+      "password": "xwhpcy",
+      "img": "https://randomuser.me/api/portraits/women/36.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        }
+      ]
+    },
+    {
+      "uuid": "511a9036-9514-4721-9249-c1a62aa5be02",
+      "first_name": "Mariusz",
+      "last_name": "Penkala",
+      "email": "mariusz.penkala@gmail.com",
+      "password": "dooszn",
+      "img": "https://randomuser.me/api/portraits/women/4.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
+      "first_name": "Zbigniew",
+      "last_name": "Ziobro",
+      "email": "zbigniew.ziobro@gmail.com",
+      "password": "xibklj",
+      "img": "https://randomuser.me/api/portraits/men/71.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "c#",
+          "name": "C#"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "9853aed8-ed51-48f9-8f91-9212af5575a4",
+      "first_name": "Marek",
+      "last_name": "Konrad",
+      "email": "marek.konrad@gmail.com",
+      "password": "awqoqu",
+      "img": "https://randomuser.me/api/portraits/men/83.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "node",
+          "name": "Node JS"
+        }
+      ]
+    },
+    {
+      "uuid": "f9856179-1dd3-410b-b4be-5390dace4a90",
+      "first_name": "Sabina",
+      "last_name": "Szafar",
+      "email": "sabina.tar@gmail.com",
+      "password": "jjyvao",
+      "img": "https://randomuser.me/api/portraits/women/43.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        }
+      ]
+    },
+    {
+      "uuid": "7da263b7-29d4-4a66-bc74-ed3f37cf5db1",
+      "first_name": "Joanna",
+      "last_name": "Lert",
+      "email": "joanna.kert@gmail.com",
+      "password": "wvxjdv",
+      "img": "https://randomuser.me/api/portraits/men/7.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        },
+        {
+          "code": "c",
+          "name": "C#"
+        }
+      ]
+    },
+    {
+      "uuid": "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
+      "first_name": "Marcelina",
+      "last_name": "Kasz",
+      "email": "marcelina.kasz@gmail.com",
+      "password": "jmodik",
+      "img": "https://randomuser.me/api/portraits/men/7.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "node",
+          "name": "Node JS"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0",
+      "first_name": "Lila",
+      "last_name": "Kater",
+      "email": "lila.Kater@gmail.com",
+      "password": "utntxt",
+      "img": "https://randomuser.me/api/portraits/men/83.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        }
+      ]
+    },
+    {
+      "uuid": "72d165a2-413b-45de-8cfc-971aa84bf639",
+      "first_name": "Henryk",
+      "last_name": "Waszyk",
+      "email": "henryk.wasz@gmail.com",
+      "password": "hkmqkf",
+      "img": "https://randomuser.me/api/portraits/men/47.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "node",
+          "name": "Node JS"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "744697ba-4279-41c4-a90b-f22d8c0f1862",
+      "first_name": "Waleria",
+      "last_name": "Marszer",
+      "email": "waleria.maszer@gmail.com",
+      "password": "grssvn",
+      "img": "https://randomuser.me/api/portraits/women/51.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        }
+      ]
+    },
+    {
+      "uuid": "fa909187-feb6-41ca-8c74-217dd38c1d01",
+      "first_name": "Wladysław",
+      "last_name": "Kokosz",
+      "email": "wladyslaw.kokosz@gmail.com",
+      "password": "ocalzl",
+      "img": "https://randomuser.me/api/portraits/men/89.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "node",
+          "name": "Node JS"
+        },
+        {
+          "code": "c#",
+          "name": "C#"
+        }
+      ]
+    },
+    {
+      "uuid": "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
+      "first_name": "Sabina",
+      "last_name": "Seas",
+      "email": "sabina.seas@gmail.com",
+      "password": "gpnwvv",
+      "img": "https://randomuser.me/api/portraits/women/50.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685",
+      "first_name": "Julia",
+      "last_name": "Zdziebło",
+      "email": "julia.zdzieblo@gmail.com",
+      "password": "cmfdgb",
+      "img": "https://randomuser.me/api/portraits/men/74.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        }
+      ]
+    },
+    {
+      "uuid": "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
+      "first_name": "Karolina",
+      "last_name": "Majzersz",
+      "email": "karolina.lubasz@gmail.com",
+      "password": "dbhffl",
+      "img": "https://randomuser.me/api/portraits/women/68.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "179201c4-8ea4-4c32-b066-8859694113f4",
+      "first_name": "Maurycy",
+      "last_name": "Szaszsz",
+      "email": "maurycy.suchasz@gmail.com",
+      "password": "kwtqmn",
+      "img": "https://randomuser.me/api/portraits/women/66.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d",
+      "first_name": "Alojzy",
+      "last_name": "Gagas",
+      "email": "alojzy.gagas@gmail.com",
+      "password": "kqgsiw",
+      "img": "https://randomuser.me/api/portraits/women/81.jpg",
+      "role": "manager",
+      "specializations": [
+        {
+          "code": "net",
+          "name": ".NET"
+        },
+        {
+          "code": "react",
+          "name": "React JS"
+        }
+      ]
+    },
+    {
+      "uuid": "9275ff03-98ef-4e84-9bad-2e49c7e608b7",
+      "first_name": "Lucyna",
+      "last_name": "Kamrzesz",
+      "email": "lucyna.warszawa@gmail.com",
+      "password": "jpbvwq",
+      "img": "https://randomuser.me/api/portraits/women/47.jpg",
+      "role": "user",
+      "specializations": [
+        {
+          "code": "c#",
+          "name": "C#"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "start_date": 2015,
+      "end_date": 2017,
+      "name": "Itaka",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
+        "0972000d-727f-416b-a04d-fdc2cc47d051"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "advanced skill in scss",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "problem-solving skill",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start_date": 2016,
+      "end_date": 2019,
+      "name": "eBilet",
+      "description": "This project will develop a module offered to air lines, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "f9856179-1dd3-410b-b4be-5390dace4a90"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "lack of scss knowledge",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "lack of js knowledge",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "advanced knowledge in node.js",
+          "member_id": "f9856179-1dd3-410b-b4be-5390dace4a90"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "advanced knowledge in react.js",
+          "member_id": "f9856179-1dd3-410b-b4be-5390dace4a90"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start_date": 2017,
+      "end_date": "still active",
+      "name": "Barbados",
+      "description": "This project will develop a module offered to Valeo, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
+        "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "advanced skill in html",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "advanced skill in js",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "weak in scss",
+          "member_id": "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start_date": 2020,
+      "end_date": "still active",
+      "name": "Raisen",
+      "description": "This project will develop a module offered to army, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "f9856179-1dd3-410b-b4be-5390dace4a90",
+        "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Lila",
+          "author_last_name": "Kater",
+          "date": 2014,
+          "text": "good in data bases",
+          "member_id": "f9856179-1dd3-410b-b4be-5390dace4a90"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start_date": 2021,
+      "end_date": "still active",
+      "name": "Bewert",
+      "description": "This project will develop a module offered to Eaton, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Lila",
+          "author_last_name": "Kater",
+          "date": 2014,
+          "text": "good in css",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good in scss",
+          "member_id": "7da263b7-29d4-4a66-bc74-ed3f37cf5db1"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start_date": 2015,
+      "end_date": 2017,
+      "name": "Wytep",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
+        "0972000d-727f-416b-a04d-fdc2cc47d051"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "good in js and node.js",
+          "member_id": "a24eb523-f3be-4ef9-bc1c-cacb742b1a58"
+        },
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "good in data bases",
+          "member_id": "0972000d-727f-416b-a04d-fdc2cc47d051"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start_date": 2015,
+      "end_date": 2016,
+      "name": "TUI",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "a24eb523-f3be-4ef9-bc1c-cacb742b1a58",
+        "0972000d-727f-416b-a04d-fdc2cc47d051",
+        "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "a24eb523-f3be-4ef9-bc1c-cacb742b1a58"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "weak in html",
+          "member_id": "0972000d-727f-416b-a04d-fdc2cc47d051"
+        },
+        {
+          "author_first_name": "Lila",
+          "author_last_name": "Kater",
+          "date": 2014,
+          "text": "weak in css",
+          "member_id": "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start_date": 2019,
+      "end_date": 2021,
+      "name": "Xiaong",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "a24eb523-f3be-4ef9-bc1c-cacb742b1a58"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Lila",
+          "author_last_name": "Kater",
+          "date": 2014,
+          "text": "weak in data bases",
+          "member_id": "a24eb523-f3be-4ef9-bc1c-cacb742b1a58"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start_date": 2018,
+      "end_date": 2019,
+      "name": "Setelt",
+      "description": "This project will develop a module offered to Ford, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0",
+        "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "1514d0e8-cf91-44a7-aa35-a1b4070ca2a0"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in .NET",
+          "member_id": "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start_date": 2019,
+      "end_date": 2020,
+      "name": "Kenent",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "72d165a2-413b-45de-8cfc-971aa84bf639",
+        "744697ba-4279-41c4-a90b-f22d8c0f1862",
+        "fa909187-feb6-41ca-8c74-217dd38c1d01"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in React JS",
+          "member_id": "72d165a2-413b-45de-8cfc-971aa84bf639"
+        },
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in Node JS",
+          "member_id": "744697ba-4279-41c4-a90b-f22d8c0f1862"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "fa909187-feb6-41ca-8c74-217dd38c1d01"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start_date": 2018,
+      "end_date": 2020,
+      "name": "Mevert",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "72d165a2-413b-45de-8cfc-971aa84bf639",
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "744697ba-4279-41c4-a90b-f22d8c0f1862"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in .NET",
+          "member_id": "72d165a2-413b-45de-8cfc-971aa84bf639"
+        },
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "weak in React JS",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in scss",
+          "member_id": "744697ba-4279-41c4-a90b-f22d8c0f1862"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start_date": 2013,
+      "end_date": 2015,
+      "name": "Uzym",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "fa909187-feb6-41ca-8c74-217dd38c1d01",
+        "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
+        "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "fa909187-feb6-41ca-8c74-217dd38c1d01"
+        },
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in js",
+          "member_id": "afdb0d00-d78b-4e6c-96a6-96b0446212d2"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in .NET",
+          "member_id": "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start_date": 2017,
+      "end_date": 2019,
+      "name": "Measert",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
+        "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good",
+          "member_id": "afdb0d00-d78b-4e6c-96a6-96b0446212d2"
+        },
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "ae89cafd-8f8e-4cd7-9cfc-bb42d4f3d685"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start_date": 2018,
+      "end_date": 2020,
+      "name": "Wyeszaw",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
+        "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
+        "9853aed8-ed51-48f9-8f91-9212af5575a4"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in React JS",
+          "member_id": "16b6c930-2a51-4f79-99e1-9caa1eb9a1de"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in scss",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start_date": 2020,
+      "end_date": "still active",
+      "name": "Oden",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "511a9036-9514-4721-9249-c1a62aa5be02",
+        "16b6c930-2a51-4f79-99e1-9caa1eb9a1de",
+        "9853aed8-ed51-48f9-8f91-9212af5575a4",
+        "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in css",
+          "member_id": "511a9036-9514-4721-9249-c1a62aa5be02"
+        },
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "16b6c930-2a51-4f79-99e1-9caa1eb9a1de"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "good job",
+          "member_id": "9853aed8-ed51-48f9-8f91-9212af5575a4"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in .NET",
+          "member_id": "7c353d65-4ffa-4e6d-9772-afa5bdb26b3d"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start_date": 2021,
+      "end_date": "still active",
+      "name": "Fallent",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "511a9036-9514-4721-9249-c1a62aa5be02",
+        "0972000d-727f-416b-a04d-fdc2cc47d051"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "511a9036-9514-4721-9249-c1a62aa5be02"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in React JS",
+          "member_id": "0972000d-727f-416b-a04d-fdc2cc47d051"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start_date": 2019,
+      "end_date": "still active",
+      "name": "Ymaw",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
+        "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in HTML",
+          "member_id": "afdb0d00-d78b-4e6c-96a6-96b0446212d2"
+        },
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in SCSS",
+          "member_id": "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start_date": 2017,
+      "end_date": 2019,
+      "name": "Keysza",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "afdb0d00-d78b-4e6c-96a6-96b0446212d2",
+        "0972000d-727f-416b-a04d-fdc2cc47d051",
+        "179201c4-8ea4-4c32-b066-8859694113f4"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Karolina",
+          "author_last_name": "Water",
+          "date": 2014,
+          "text": "good in scss",
+          "member_id": "afdb0d00-d78b-4e6c-96a6-96b0446212d2"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in Node JS",
+          "member_id": "0972000d-727f-416b-a04d-fdc2cc47d051"
+        },
+        {
+          "author_first_name": "Lila",
+          "author_last_name": "Kater",
+          "date": 2014,
+          "text": "good in css",
+          "member_id": "179201c4-8ea4-4c32-b066-8859694113f4"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start_date": 2015,
+      "end_date": 2018,
+      "name": "Mazepaw",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
+        "07f67e76-9154-4f0a-99a0-a34d23fe7dd7",
+        "179201c4-8ea4-4c32-b066-8859694113f4"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in css",
+          "member_id": "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa"
+        },
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
+        },
+        {
+          "author_first_name": "Mariusz",
+          "author_last_name": "Penkala",
+          "date": 2014,
+          "text": "good in Node JS",
+          "member_id": "179201c4-8ea4-4c32-b066-8859694113f4"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start_date": 2017,
+      "end_date": 2019,
+      "name": "Usen",
+      "description": "This project will develop a module offered to travel agency, and will seek to develop workers skills in collaborative working and information literacy while still advancing their discipline knowledge.",
+      "members": [
+        "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa",
+        "179201c4-8ea4-4c32-b066-8859694113f4",
+        "9275ff03-98ef-4e84-9bad-2e49c7e608b7"
+      ],
+      "opinions": [
+        {
+          "author_first_name": "Alojzy",
+          "author_last_name": "Gagas",
+          "date": 2014,
+          "text": "good in html",
+          "member_id": "b7e4414f-8ffe-4fb5-8ac5-ca83d99d95aa"
+        },
+        {
+          "author_first_name": "Marcelina",
+          "author_last_name": "Wart",
+          "date": 2014,
+          "text": "good in css",
+          "member_id": "179201c4-8ea4-4c32-b066-8859694113f4"
+        },
+        {
+          "author_first_name": "Zbigniew",
+          "author_last_name": "Ziobro",
+          "date": 2014,
+          "text": "weak in React JS",
+          "member_id": "9275ff03-98ef-4e84-9bad-2e49c7e608b7"
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
