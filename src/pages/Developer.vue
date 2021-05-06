@@ -9,16 +9,16 @@
       </p>
     </div>
     <b-table :items="projects" :fields="fields">
-      <template #cell(projectDescription)="data">
+      <template #cell(projectDescription)="{item:project}">
         <router-link
           class="developer-link"
-          :to="`/workers/${$route.params.id}/project/${data.item.id}`"
+          :to="`/workers/${$route.params.id}/project/${project.id}`"
         >
           see project description<span
             v-if="checkWorkerStatus()"
             class="developer-quantity"
           >
-            {{ getOpinionsForProject(data.item).length }}</span
+            {{ getOpinionsForProject(project).length }}</span
           ></router-link
         >
       </template>
@@ -107,7 +107,7 @@ export default {
   color: White;
   position: absolute;
   top: -10px;
-  right: 15px;
+  right: 25px;
   font-size: 10px;
   padding: 4px;
 }

@@ -22,14 +22,14 @@
       <div>
         <b-table
           id="my-table"
-          :items="filteredWorkers"
+          :items="updateWorkers"
           :fields="fields"
           :per-page="perPage"
           :current-page="currentPage"
           small
         >
-          <template #cell(actions)="data">
-            <router-link :to="`/workers/${data.item.uuid}`"
+          <template #cell(actions)="{ item: worker }">
+            <router-link :to="`/workers/${worker.uuid}`"
               >see details</router-link
             >
           </template>
@@ -38,7 +38,7 @@
 
       <b-pagination
         v-model="currentPage"
-        :total-rows="rows"
+        :total-rows="updateWorkers.length"
         :per-page="perPage"
         aria-controls="my-table"
       ></b-pagination>
@@ -47,7 +47,6 @@
 </template>
 
 <script>
-import { isEmpty } from "lodash";
 import { workers } from "../api/workers";
 
 const prepareSpecializationsForDisplay = (data) => {
@@ -64,7 +63,6 @@ export default {
   data: () => ({
     selectedFilters: [],
     workers: workers,
-    filteredWorkers: prepareSpecializationsForDisplay(workers),
     perPage: 6,
     currentPage: 1,
     fields: [
@@ -106,21 +104,20 @@ export default {
     ],
   }),
   computed: {
-    rows() {
-      return this.filteredWorkers.length;
-    },
-  },
-  methods: {
-    onChange(selectedFilters) {
-      const results = isEmpty(selectedFilters)
+    updateWorkers() {
+      const results = !this.selectedFilters.length
         ? this.workers
         : this.workers.filter((x) =>
             x.specializations
               .map((s) => s.code)
-              .some((r) => selectedFilters.indexOf(r) !== -1)
+              .some((r) => this.selectedFilters.indexOf(r) !== -1)
           );
-
-      this.filteredWorkers = prepareSpecializationsForDisplay(results);
+      return prepareSpecializationsForDisplay(results);
+    },
+  },
+  methods: {
+    onChange(selectedFilters) {
+      this.selectedFilters = selectedFilters;
     },
   },
 };
