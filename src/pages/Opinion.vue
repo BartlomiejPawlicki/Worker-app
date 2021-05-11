@@ -27,9 +27,8 @@
 </template>
 <script>
 import moment from "moment";
-import { getProjectById, getOpinionByWorkerId } from "../api/project";
-import { getUserById } from "../api/workers";
 import ReturnButton from "../Components/ReturnButton";
+import { api } from "../api";
 
 export default {
   name: "Project",
@@ -39,14 +38,18 @@ export default {
   data: () => ({
     project: {},
     opinions: {},
-    worker: {},
     isManagerLogged: false,
   }),
   mounted() {
     const { projectId, id } = this.$route.params;
-    this.project = getProjectById(projectId);
-    this.opinions = getOpinionByWorkerId(this.project, id);
-    this.worker = getUserById(id);
+    const fetchData = async (url) => {
+      const response = await api(url);
+      const opinions = response.opinions.filter((x) => x.member_id === id);
+      this.project = response;
+      this.opinions = opinions;
+    };
+
+    fetchData(`projects/${projectId}?_expand=opinions`);
   },
   methods: {
     formatDate: function (date) {

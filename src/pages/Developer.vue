@@ -1,6 +1,6 @@
 <template>
   <div class="developer">
-    <div class="developer-details" v-if="worker.img">
+    <div class="developer-details">
       <img width="160" height="142" :src="worker.img" alt="" />
       <p class="developer-paragraph">
         {{ worker.first_name }}
@@ -14,13 +14,11 @@
           class="developer-link"
           :to="`/workers/${$route.params.id}/project/${project.id}`"
         >
-          see project description<span
-            v-if="checkWorkerStatus()"
-            class="developer-quantity"
-          >
+          see project description
+          <span v-if="checkWorkerStatus()" class="developer-quantity">
             {{ getOpinionsForProject(project).length }}</span
-          ></router-link
-        >
+          >
+        </router-link>
       </template>
     </b-table>
     <ReturnButton />
@@ -28,9 +26,8 @@
 </template>
 
 <script>
-import { getProjectsByWorkerId } from "../api/project";
-import { getUserById } from "../api/workers";
 import ReturnButton from "../Components/ReturnButton";
+import { api } from "../api";
 
 export default {
   name: "Developer",
@@ -62,8 +59,24 @@ export default {
   }),
   mounted() {
     const uuid = this.$route.params.id;
-    this.worker = getUserById(uuid);
-    this.projects = getProjectsByWorkerId(uuid);
+    const fetchProjects = async (url) => {
+      const response = await api(url);
+      const listOfProjects = response.filter((x) =>
+        x.members.find((a) => a === uuid)
+      );
+
+      this.projects = listOfProjects;
+    };
+
+    fetchProjects("projects");
+
+    const fetchUsers = async (url) => {
+      const response = await api(url);
+      const worker = response.find((x) => x.uuid === uuid);
+      this.worker = worker;
+    };
+
+    fetchUsers("workers");
   },
   methods: {
     checkWorkerStatus() {

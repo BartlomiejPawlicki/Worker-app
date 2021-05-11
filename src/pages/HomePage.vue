@@ -47,6 +47,7 @@
 </template>
 
 <script>
+import { api } from "../api";
 const prepareSpecializationsForDisplay = (data) => {
   const results = data.map((x) => ({
     ...x,
@@ -114,14 +115,12 @@ export default {
     },
   },
   mounted() {
-    const self = this;
     const fetchUsers = async (url) => {
-      const response = await fetch(url);
-      const json = await response.json();
-      self.workers = json;
+      const response = await api(url);
+      this.workers = response;
     };
 
-    fetchUsers("http://localhost:3000/workers");
+    fetchUsers("workers");
   },
   methods: {
     onChange(selectedFilters) {

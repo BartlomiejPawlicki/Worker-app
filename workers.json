@@ -318,21 +318,21 @@
         {
           "author_first_name": "Zbigniew",
           "author_last_name": "Ziobro",
-          "date": 2014,
+          "date": "2016-10-03T00:00:00.000Z",
           "text": "advanced skill in scss",
           "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
         },
         {
           "author_first_name": "Marcelina",
           "author_last_name": "Wart",
-          "date": 2014,
+          "date": "2016-07-03T00:00:00.000Z",
           "text": "good job",
           "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
         },
         {
           "author_first_name": "Marcelina",
           "author_last_name": "Wart",
-          "date": 2014,
+          "date": "2017-10-03T00:00:00.000Z",
           "text": "problem-solving skill",
           "member_id": "07f67e76-9154-4f0a-99a0-a34d23fe7dd7"
         }
@@ -967,8 +967,5 @@
         }
       ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
